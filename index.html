@@ -2,32 +2,31 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv=""X-UA-Compatible" content="EI-Edge">
-        <meta name=""viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="EI-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kryos Cold Storage and Logistics Corp..</title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+<!-------------------------------------HOME------------------------------------------------------------------->
         <div id="header">
-            <div class="container">
-                <nav>
+            <div>
+                <nav id="navbar">
                     <img src="pictures/kryos_logo.png" class="logo">
-                    <h1>Kryos</h1>
-                    <h2>Cold Storage and Logistics Corp.</h2>
                     <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li> 
-                    <li><a href="#certificates">Certifications</a></li> 
-                    <li><a href="#contact">Contact</a></li>     
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li> 
+                        <li><a href="#contact">Contact Us</a></li>     
                     </ul>
                 </nav>
-                <div class="header-text">
-                    <p>Get the most secure and affordable cold storage solutions for your goods</p>
-                    <h1>also here!!!</h1>
-                </div>
+            </div>  
+            <div class="container">
+                <h1>SECURE AND AFFORDABLE <br>COLD STORAGE FOR YOUR GOODS</h1>
+                <p>Ensure the safety and quality of your goods with our state-of-the-art cold storage <br> facilities, utilizing the latest technology to provide top-notch services at competitive pricing.</p>
+                <button type="submit" class="btn">INQUIRE NOW</button>
             </div>
-        </div>
-
+        </div>    
 <!------------------------------------ABOUT KRYOS COMPANY--------------------------------------------------------->
         <div id="about">
             <div class="container">
@@ -41,12 +40,7 @@
                 </div>
             </div>
         </div>
-        <div id="certificates">
-            <div class="container">
-                <h1>flex certificates here!!</h1>
-            </div>
-        </div>
-<!-----------------------------------CONTACT------------------------------------------------------------>
+<!-----------------------------------CONTACT US------------------------------------------------------------>
         <div id="contact">
             <div class="container">
                 <form name="submit-to-email">
@@ -58,4 +52,18 @@
             </div>
         </div>
     </body>
+    <script type="text/javascript"> 
+        var lastScrollTop = 0;
+            navBar = document.getElementById("navbar");
+        window .addEventListener("scroll", function(){
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if(scrollTop > lastScrollTop){
+                navBar.style.top = "-70px";
+            }
+            else{
+                navBar.style.top = "0";
+            }
+            lastScrollTop = scrollTop;
+        })
+    </script>
 </html>
