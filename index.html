@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-<!-------------------------------------HOME------------------------------------------------------------------->
+    <!--Home  -->
         <div id="header">
             <div>
                 <nav id="navbar">
@@ -17,30 +17,93 @@
                     <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li> 
+                        <li><a href="#services">Services</a></li> 
                         <li><a href="#contact">Contact Us</a></li>     
                     </ul>
                 </nav>
             </div>  
             <div class="container">
                 <h1>SECURE AND AFFORDABLE <br>COLD STORAGE FOR YOUR GOODS</h1>
-                <p>Ensure the safety and quality of your goods with our state-of-the-art cold storage <br> facilities, utilizing the latest technology to provide top-notch services at competitive pricing.</p>
+                <p>Ensure the safety and quality of your goods with our state-of-the-art cold storage <br> 
+                    facilities, utilizing the latest technology to provide top-notch services at competitive pricing.
+                </p>
                 <button type="submit" class="btn">INQUIRE NOW</button>
             </div>
         </div>    
-<!------------------------------------ABOUT KRYOS COMPANY--------------------------------------------------------->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-row1">
-                        <img src="" alt="">
-                    </div>
-                    <div class="about-row2">
-                        <h1>about kryos</h1>
-                    </div>
+    <!-- About Kryos -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/facilities/cold storage.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Kryos</h1>
+                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('mission')">Mission</p>
+                    <p class="tab-links" onclick="opentab('vision')">Vision</p>
+                    <p class="tab-links" onclick="opentab('values')">Food Safety and Quality Policy</p>
+                </div>
+                <div class="tab-contents active-tab" id="mission">
+                    <ul>
+                        <li><span>We envision a future where our warehousing solutions redefine industry
+                            standards, setting new benchmarks for efficiency, flexibility, and customers
+                            satisfaction. By leveraging advanced technologies and strategic partnerships, we
+                            aspire to lead the way in revolutionizing the logistics landscape, empowering
+                            business to thrive in a rapidly evolving global market.
+                            </span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="vision">
+                    <ul>
+                        <li><span>Our mission is to efficiently manage and optimize warehousing operations,
+                            providing innovative solutions tailored to our clients need while ensuring the
+                            highest standards of safety, reliability, and sustainability. Through continuous
+                            improvement and cutting-edge technology, we aim to be the preferred partner for
+                            companies seeking excellence in warehousing and logistics.</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="values">
+                    <ul>
+                        <li><span>KRYOS COLD STORAGE AND LOGISTICS CORP, 
+                            commits to provide its partners with 
+                            fully integrated network of
+                            quality service and solutions thru:</span>
+                            <div class="bullet">
+                                <ul>                                
+                                    <li>Clean, quality well maintained and food safe
+                                        storage facilities which are 100 percent compliant
+                                        to government and client requirements.</li>
+                                    <li>Competent, well trained, responsible, reliable and service oriented team.</li>
+                                    <li>Continuous improvement program based on latest industry trends, latest mandates and operational performance index.</li>
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-<!-----------------------------------CONTACT US------------------------------------------------------------>
+    </div>
+</div>
+
+    <!-- Contact US -->
         <div id="contact">
             <div class="container">
                 <form name="submit-to-email">
@@ -52,6 +115,8 @@
             </div>
         </div>
     </body>
+
+    <!-- HEADER SCROLL DOWN/UP -->
     <script type="text/javascript"> 
         var lastScrollTop = 0;
             navBar = document.getElementById("navbar");
@@ -65,5 +130,20 @@
             }
             lastScrollTop = scrollTop;
         })
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");    
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
     </script>
 </html>
