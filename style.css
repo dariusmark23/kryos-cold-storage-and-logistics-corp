@@ -195,6 +195,39 @@ nav ul li a:hover::after{
     display: block;
     font-size: 16px;
 }
+/* Our services */
+#services{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background-color: #101010;
+}
+.services-box{
+    height: 370px;
+    width: 335px;
+    background: #108cff;
+    margin: 50px;
+}
+.services-box h2{
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services-box p{
+    margin: 5% 20px;
+}
 /* CONTACT US */
 #contact{
     margin: 0;
