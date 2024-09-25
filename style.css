@@ -157,7 +157,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #23d559;
+    background: #fff;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -171,7 +171,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #6faa55;
+    color: #fff;
     font-size: 20px;
 }
 .tab-contents{
@@ -180,6 +180,10 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
     font-size: 16px;
+}
+.bullet ul li{
+    list-style-type: disc;
+    margin-left: 40px;
 }
 /*
 .description{
