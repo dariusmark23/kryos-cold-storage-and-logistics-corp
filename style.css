@@ -8,8 +8,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: rgba(53, 53, 53, 0.95);
     color: white;
+    background-color: #c9c4c4;
 }
 /* HEADER */
 #header{
@@ -68,7 +68,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .container h1{
-    margin-top: 15%;
+    margin-top: 10%;
     font-size: 70px;
 }
 .container p{
@@ -93,7 +93,7 @@ nav ul li a:hover::after{
 #about{
     width: 100%;
     height: 100vb;
-    padding: 60px 60px;
+    padding: 40px 60px;
     background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65)), url(pictures/facilities/lobby_3.jpg);
     background-size: cover;
     background-position: center;
@@ -121,8 +121,30 @@ nav ul li a:hover::after{
     width: 100%;
     border-radius: 15px;
 }
+.slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slides{
+    display: flex;
+    width: 100%;
+    animation: slide 9s infinite;
+}
+.slide{
+    width: 100%;
+    flex-shrink: 0;
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(0); }
+    36% { transform: translateX(-100%); }
+    66% { transform: translateX(-100%); }
+    69% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
 .about-col-2{
-    flex-basis: 60%;
+    flex-basis: 62%;
 }
 .about-col-2 p{
     text-align: justify;
@@ -140,14 +162,14 @@ nav ul li a:hover::after{
 }
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    margin: 15px 0 30px;
 }
 .tab-titles p{
     font-size: 25px;
     font-family: 'Poppins';
 }
 .tab-links{
-    margin-right: 50px;
+    margin-right: 40px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -185,92 +207,16 @@ nav ul li a:hover::after{
     list-style-type: disc;
     margin-left: 40px;
 }
-/*
-.description{
-    margin: 0 300px;
-    margin-top: -30px;
-    text-justify: auto;
-}
-.pic-content{
-    padding: 3% 5%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.slider img{
-    margin: 25px 0;
-    width: 75%;
-    height: 75%;
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.sub-title{
-    font-family: 'Poppins';
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    font-size: 60px;
-    color: #fff;
-    margin: 0;
-}
-.tab-titles{
-    display: flex;
-    color: #fff;
-}
-.tab-titles p{
-    font-size: 25px;
-    font-family: 'Poppins';
-}
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-.tab-links.active-link::after{
-    width: 50%;
-}
-.tab-contents ul li{
-    list-style: none;
-    margin: -300px 400px;
-}
-.tab-contents ul li span{
-    color: white;
-    font-size: 20px;
-}
-.bullet ul li{
-    list-style-type: disc;
-    margin-left: 40px;
-}
-.tab-contents{
-    display: none;
-}
-.tab-contents.active-tab{
-    display: flex;
-    font-size: 16px;
-} */
 /* Our services */
 #services{
     margin: 0;
     padding: 0;
-    height: 90vb;
+    height: 120vb;
     font-family: 'Poppins';
 }
 .services-container{
     width: 1170px;
-    margin: 5% auto;
+    margin: 3% auto;
 }
 .services-container h2{
     font-family: 'Poppins';
@@ -278,50 +224,142 @@ nav ul li a:hover::after{
     font-weight: bold;
     text-align: center;
     font-size: 60px;
-    color: #fff;
-    margin: 0;
+    color: #000;
+    margin: 0 auto;
 }
 .line{
     width: 150px;
     height: 3px;
-    background: #fff;
-    margin: 0 auto 60px auto;
+    background: #000;
+    margin: 0 auto 40px auto;
 }
 .services-box{
     position: relative;
-    width: 31%;
+    width: 43.5%;
     height: 320px;
-    background: #fff;
+    background: #000;
     box-sizing: border-box;
     padding: 0 15px;
-    transition: 0.5w;
-    overflow: hidden;
     float: left;
     margin: 0 10px;
     text-align: center;
     border-radius: 10px;
-}
-.service-picture{
-    margin: 5px auto;
-    display: flex;
-    width: 125px;
-    height: 100px;
+    margin-bottom: 30px;
 }
 .service-logo{
     width: 50px;
     margin: 3%  auto;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 .services-box p{
-    color: #262626;
+    color: #fff;
     font-size: 14px;
+    text-align: center;
 }
 .services-box h3{
     font-family: 'Poppins';
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #262626;
+    color: #fff;
+}
+.services-container-2{
+    width: 1170px;
+    margin: 5% auto;
+}
+.services-container-2 h2{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    color: #000;
+    margin: 0;
+}
+.services-box-2{
+    position: relative;
+    width: 31%;
+    height: 200px;
+    background: #000;
+    box-sizing: border-box;
+    padding: 0 15px;
+    float: left;
+    margin: 0 5px;
+    margin-bottom: 5%;
+    text-align: center;
+    border-radius: 10px;
+}
+.service-logo-2{
+    width: 50px;
+    margin: 3%  auto;
+    margin-top: 15%;
+}
+.services-box-2 p{
+    color: #fff;
+    font-size: 14px;
+}
+.services-box-2 h3{
+    font-family: 'Poppins';
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+/* WHY CHOOSE US? */
+#why_choose_us{
+    width: 100%;
+    height: 100vb;
+    background-image: linear-gradient(rgba(52, 53, 53, .65));
+    background-size: cover;
+    background-position: center;
+} 
+.choose_container{
+    width: 100%;
+}
+.choose_container h2{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    color: #000;
+    margin: 0 auto;
+}
+.why-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1% 3%;
+    margin: 0;
+}
+.why-col-1{
+    flex-basis: 50%;
+}
+.why-col-2{
+    flex-basis: 50%;
+}
+.why-slider{
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+.why-slides{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    animation: slide 9s infinite;
+}
+.why-slide{
+    width: 100%;
+    flex-shrink: 0;
+}
+@keyframes why-slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(0); }
+    36% { transform: translateX(-100%); }
+    66% { transform: translateX(-100%); }
+    69% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
 }
 /* CONTACT US */
 #contact{
