@@ -194,15 +194,8 @@ nav ul li a:hover::after{
     background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65)), url(pictures/facilities/dock.jpg);
 }
 .container-services{
-    padding: 2px 10%;
+    padding: 40px 10%;
     width: 100%;
-}
-.services-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 1170px;
-    margin: 3% auto;
 }
 .container-services h2{
     font-family: 'Poppins';
@@ -212,6 +205,13 @@ nav ul li a:hover::after{
     font-size: 60px;
     color: #ffffff;
     margin: 0 auto;
+}
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 3% auto;
 }
 .line{
     width: 150px;
@@ -252,7 +252,7 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 1170px;
+    width: 100%;
     margin: 5% auto;
 }
 .container-services h2{
