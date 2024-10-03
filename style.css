@@ -187,18 +187,24 @@ nav ul li a:hover::after{
 }
 /* Our services */
 #services{
+    width: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
     background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65)), url(pictures/facilities/dock.jpg);
 }
 .container-services{
     padding: 2px 10%;
+    width: 100%;
 }
 .services-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 1170px;
     margin: 3% auto;
 }
-.services-container h2{
+.container-services h2{
     font-family: 'Poppins';
     text-transform: uppercase;
     font-weight: bold;
@@ -220,7 +226,6 @@ nav ul li a:hover::after{
     background: #000;
     box-sizing: border-box;
     padding: 0 5px;
-    float: left;
     margin: 0 10px;
     text-align: center;
     border-radius: 10px;
@@ -244,10 +249,13 @@ nav ul li a:hover::after{
     color: #fff;
 }
 .services-container-2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 1170px;
     margin: 5% auto;
 }
-.services-container-2 h2{
+.container-services h2{
     font-family: 'Poppins';
     text-transform: uppercase;
     font-weight: bold;
@@ -258,12 +266,12 @@ nav ul li a:hover::after{
 }
 .services-box-2{
     position: relative;
+    
     width: 30.2%;
     height: 200px;
     background: #000;
     box-sizing: border-box;
     padding: 0 15px;
-    float: left;
     margin: 0 5px;
     text-align: center;
     border-radius: 10px;
