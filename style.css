@@ -515,7 +515,7 @@ footer{
     /* HEADER/HOME */
     #header{
         width: 100%;
-        background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65)), url(pictures/bg.png);
+        background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65)), url(pictures/bg.jpg);
     }
     .container{
         padding: 35% 10%;
@@ -525,6 +525,9 @@ footer{
     }
     .container p{
         font-size: 13px;
+    }
+    #sidemenu{
+        display: none;
     }
     nav{
         position: fixed;
