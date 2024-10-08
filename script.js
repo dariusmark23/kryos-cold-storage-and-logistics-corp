@@ -1,5 +1,0 @@
-function sendMail(){
-    let parms = {
-        
-    }
-}

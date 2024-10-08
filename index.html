@@ -228,13 +228,13 @@
                 </div>
                 <div class="contact-form">
                     <h1>MESSAGE US</h1>
-                    <form action="" method="">
-                        <input type="hidden" name="" value="">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="8cedaf93-3d4f-4f08-8c2b-0867dc7d41e9">
 
                         <input type="text" placeholder="Name*" class="contact-form-txt" name="Name"required>
                         <input type="email" placeholder="Email*" class="contact-form-txt" name="Email" required>
                         <textarea  type="message"  placeholder="Message*" class="contact-form-txtarea" name="Message"required></textarea>
-                        <input type="submit" class="btn">
+                        <input type="submit" onclick="sendMail()" class="btn">
                     </form>
                 </div>
             </div>
