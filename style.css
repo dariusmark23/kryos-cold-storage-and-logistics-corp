@@ -516,7 +516,6 @@ footer{
     #header{
         width: 100%;
         background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65)), url(pictures/bg.jpg);
-        height: auto;
     }
     .container{
         padding: 35% 10%;
