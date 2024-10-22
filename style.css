@@ -9,15 +9,12 @@ html{
 }
 body{
     color: white;
-    background-color: #c9c4c4;
+    background-color: rgba(53, 53, 53, 0.95)
 }
 /* HEADER */
 #header{
     width: 100%;
-    height: 100vb;
-    background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65)), url(pictures/bg.jpg);
-    background-size: cover;
-    background-position: center;
+    height: auto;
     position: relative;
     z-index: 1;
 }
@@ -89,13 +86,16 @@ nav ul li a:hover::after{
 .btn:hover{
     background: transparent;
 }
+.vid{   
+    width: 100%;
+    height: auto;
+}
 /* ABOUT KRYOS */
 #about{
     width: 100%;
     height: 100vb;
     padding: 40px 60px;
-    background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65)), url(pictures/facilities/lobby_3.jpg);
-    background-size: cover;
+    background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65));
     background-position: center;
 }
 .about-container{
@@ -376,7 +376,7 @@ nav ul li a:hover::after{
     align-items: center;
     background: gray;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65)), url(pictures/facilities/kryos_front.jpg);
+    background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65));
     background-size: cover;
     background-position: center;
 }
@@ -487,7 +487,8 @@ footer{
     margin: 1rem 0 1rem 0;
 }
 .socials li{
-    margin: 0 10px;
+    margin: 0 0;
+    
 }
 .socials a{
     text-decoration: none;
@@ -496,6 +497,7 @@ footer{
 .socials a i{
     font-size: 1.8rem;
     transition: color .4s ease;
+    padding: 0 5px;
 }
 .socials a:hover i{
     color: aqua;
