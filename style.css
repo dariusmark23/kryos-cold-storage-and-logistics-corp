@@ -569,6 +569,9 @@ footer{
         background: #fff;
         margin: 0 auto 15px auto; 
     }
+    .vid{
+        margin-top: 70px;
+    }
     /* ABOUT */
     #about{
         width: 100%;
