@@ -11,6 +11,16 @@ body{
     color: white;
     background-color: rgba(53, 53, 53, 0.95)
 }
+.animate{
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+.animate.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* HEADER */
 #header{
     width: 100%;
@@ -191,8 +201,7 @@ nav ul li a:hover::after{
     height: auto;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65)), url(pictures/facilities/dock.jpg);
-    background-size: cover;
+    background-image: linear-gradient(rgba(81, 83, 83, 0.65),rgba(81, 83, 83, 0.65));
 }
 .container-services{
     padding: 40px 10%;
@@ -290,8 +299,8 @@ nav ul li a:hover::after{
     padding: 25px 10%;
     width: 100%;
     height: 100vb;
-    background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65)), url(pictures/choosekryos/bg.jpg);
-    background-size: cover;                                                                ;
+    background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65));
+    background-size: cover;                                                               
 }
 .work-list{
     display: grid;
@@ -376,7 +385,7 @@ nav ul li a:hover::after{
     align-items: center;
     background: gray;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65));
+    background-image: linear-gradient(rgba(81, 83, 83, 0.65),rgba(81, 83, 83, 0.65));
     background-size: cover;
     background-position: center;
 }
@@ -517,7 +526,6 @@ footer{
     /* HEADER/HOME */
     #header{
         width: 100%;
-        background-image: linear-gradient(rgba(52, 53, 53, .65),rgba(52, 53, 53, 0.65)), url(pictures/bg.jpg);
     }
     .container{
         padding: 35% 10%;
