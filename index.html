@@ -25,12 +25,17 @@
                 <div>
                     <nav id="navbar">
                         <a href="#header"><img src="pictures/kryos_logo.png" class="logo"></a>
-                        <ul id="sidemenu">
-                            <li><a href="#header">Home</a></li>
-                            <li><a href="#about">About</a></li> 
-                            <li><a href="#services">Services</a></li> 
-                            <li><a href="#contact">Contact Us</a></li>     
+                        <ul class="sidemenu">
+                            <li class="nav-item"><a href="#header" >Home</a></li>
+                            <li class="nav-item"><a href="#about" >About</a></li> 
+                            <li class="nav-item"><a href="#services" >Services</a></li> 
+                            <li class="nav-item"><a href="#contact" >Contact Us</a></li>     
                         </ul>
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
                     </nav>
                 </div>  
             </header>
@@ -264,56 +269,5 @@
             </div>
         </footer>
     </body>
-    <!-- SCRIPTS -->
-    <!-- HEADER SCROLL DOWN/UP -->
-    <script type="text/javascript"> 
-        var lastScrollTop = 0;
-            navBar = document.getElementById("navbar");
-        window .addEventListener("scroll", function(){
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if(scrollTop > lastScrollTop){
-                navBar.style.top = "-70px";
-            }
-            else{
-                navBar.style.top = "0";
-            }
-            lastScrollTop = scrollTop;
-        })
-    </script>
-    <!-- MISSION VISION AND QUALITY POLICY -->
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");    
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link")
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-    const elements = document.querySelectorAll('.animate');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            } else {
-                entry.target.classList.remove('visible');
-            }
-        });
-    });
-
-    elements.forEach(element => {
-        observer.observe(element);
-    });
-});
-    </script>
-
+     <script src="script.js"></script>
 </html>
