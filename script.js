@@ -70,3 +70,26 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 });
+// Structured Data
+function addStructuredData() {
+    var script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Kryos Cold Storage and Logistics Corp.",
+        "image": "https://www.kryosph.com/images/logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Lot 13-17 Blk 2, Boomtown Industrial Park, Tambobong",
+            "addressLocality": "Bocaue",
+            "addressRegion": "Bulacan",
+            "postalCode": "3018",
+            "addressCountry": "PH"
+        },
+        "url": "https://www.kryosph.com",
+        "telephone": "+63-919-006-8804",
+        "description": "Kryos Cold Storage and Logistics Corp. offers High-Quality cold storage solutions and logistics services to ensure the freshness and safety of your products."
+    });
+    document.head.appendChild(script);
+}
