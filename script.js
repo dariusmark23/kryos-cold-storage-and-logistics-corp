@@ -1,5 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".sidemenu");
+const navLinks = document.querySelectorAll(".sidemenu li");
 const navBar = document.getElementById("navbar");
 
 hamburger.addEventListener("click", () => {
@@ -7,24 +8,16 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
 
-navMenu.addEventListener("click", (event) => {
-    if (event.target.tagName === 'LI') {
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
-    }
+    });
 });
 
 let lastScrollTop = 0;
-const debounce = (func, wait) => {
-    let timeout;
-    return function(...args) {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(this, args), wait);
-    };
-};
-
-window.addEventListener("scroll", debounce(() => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+window.addEventListener("scroll", function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
         navBar.style.top = "-70px";
         if (hamburger.classList.contains("active")) {
@@ -35,25 +28,24 @@ window.addEventListener("scroll", debounce(() => {
         navBar.style.top = "0";
     }
     lastScrollTop = scrollTop;
-}, 100));
+});
 
 // MISSION VISION AND QUALITY POLICY
-const tablinks = document.getElementsByClassName("tab-links");    
-const tabcontents = document.getElementsByClassName("tab-contents");
-
-function opentab(tabname) {
-    for (const tablink of tablinks) {
+var tablinks = document.getElementsByClassName("tab-links");    
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
         tablink.classList.remove("active-link");
     }
-    for (const tabcontent of tabcontents) {
+    for(tabcontent of tabcontents){
         tabcontent.classList.remove("active-tab");
     }
-    event.currentTarget.classList.add("active-link");
+    event.currentTarget.classList.add("active-link")
     document.getElementById(tabname).classList.add("active-tab");
 }
 
 // LAZY LOADING
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     const elements = document.querySelectorAll('.animate');
 
     const observer = new IntersectionObserver((entries) => {
